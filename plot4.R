@@ -34,8 +34,8 @@ plot3<-plot(xrange, consum1$Sub_metering_1, type="l", xlab = "", ylab="Energy Su
 lines(xrange, consum1$Sub_metering_2, col = "red")
 lines(xrange, consum1$Sub_metering_3, col = "blue")
 
-legend("topright", pch = "â€”â€”", col = c("black", "red", "blue"), 
-       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.2, yjust = 1, bty = "n")
+legend("topright", pch = "¡ª¡ª", col = c("black", "red", "blue"), 
+       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.5, yjust = 1, bty = "n")
 
 plot5<- plot(xrange, consum1$Global_reactive_power, type="l", xlab = "datetime", ylab="Global_reactive_power" ) 
 dev.copy(png, file = "plot4.png")

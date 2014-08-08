@@ -30,8 +30,8 @@ plot3<-plot(xrange, consum1$Sub_metering_1, type="l", xlab = "", ylab="Energy Su
 lines(xrange, consum1$Sub_metering_2, col = "red")
 lines(xrange, consum1$Sub_metering_3, col = "blue")
 
-legend("topright", pch = "â€”â€”", col = c("black", "red", "blue"), 
-       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.8, xjust = 1)
+legend("topright", pch = "¡ª¡ª", col = c("black", "red", "blue"), 
+       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.8)
 
 dev.copy(png, file = "plot3.png")
 dev.off()
